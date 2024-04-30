@@ -1,0 +1,95 @@
+/**
+ * Universidad de La Laguna
+ * Escuela Superior de Ingeniería y Tecnología
+ * Grado en Ingeniería Informática
+ * Programación de Aplicaciones Interactivas
+ *
+ * @author Esther M. Quintero
+ * @date Mar 15, 2024
+ * @description Styles
+ */
+
+ body {
+  margin: 0; /* Remove default margin */
+  display: flex; /* Make the body a flex container */
+  align-items: center; /* Center the content vertically */
+  justify-content: center; /* Center the content horizontally */
+}
+
+#container {
+  margin-top: 20px;
+  display: flex; /* Make the container a flex container */
+  justify-content: space-between; /* Space the content evenly */
+  align-items: center; /* Center the content vertically */
+  width: 90%; /* 90% of the viewport width */
+  height: 90%; /* 90% of the viewport height */
+}
+
+canvas {
+  border: 1px solid #ccc; /* Add a border around the canvas */
+  flex-grow: 1; /* Make the canvas grow to fill the remaining space */
+}
+
+.controls {
+  display: flex; /* Make the controls a flex container */
+  flex-direction: column; /* Stack the controls vertically */
+  align-items: flex-start; /* Align the controls to the left */
+  justify-content: center; /* Center the controls vertically */
+  margin-left: 20px; /* Add some space to the left of the controls */
+  background-color: #ecf0f1; /* Add a light grey background color */
+}
+
+.label-container {
+  margin: 10px 0; /* Add some space above and below the labels */
+  margin-left: 20px; /* Add some space to the left of the labels */
+  margin-right: 20px; /* Add some space to the right of the labels */
+  font-style: italic; /* Make the labels italic */
+  font-weight: bold; /* Make the labels bold */
+}
+
+.slider-container {
+  margin: 10px 0; /* Add some space above and below the sliders */
+  margin-left: 20px; /* Add some space to the left of the sliders */
+  margin-right: 20px; /* Add some space to the right of the sliders */
+}
+
+.input-container {
+  margin: 10px 0; /* Add some space above and below the input fields */
+  margin-left: 20px; /* Add some space to the left of the input fields */
+  margin-right: 20px; /* Add some space to the right of the input fields */
+}
+
+.input-container-unit {
+  display: grid; /* Make the input container a grid container */
+  grid-template-columns: 1fr 1fr; /* Divide the container into two columns */
+  align-items: center; /* Center the content vertically */
+  margin: 10px 0; /* Add some space above and below the input fields */
+  margin-left: 20px; /* Add some space to the left of the input fields */
+  margin-right: 20px; /* Add some space to the right of the input fields */
+}
+
+.input-container-unit input {
+  width: 100%; /* Make the input fields fill the available space */
+  padding: 5px; /* Add some padding to the input fields */
+}
+
+.input-container-unit span {
+  text-align: center; /* Center the text in the span */
+  padding: 5px; /* Add some padding to the span */
+  background-color: #efefef; /* Add a light grey background color */
+  border: 1px solid grey; /* Add a border around the span */
+}
+
+h1 {
+  color: #4B0082; /* Add a dark purple color to the heading */
+  margin: 10px 0; /* Add some space above and below the heading */
+  margin-left: 20px; /* Add some space to the left of the heading */
+  margin-right: 20px; /* Add some space to the right of the heading */
+}
+
+a {
+  color: #007BFF; /* Add a blue color to the links */
+  margin: 10px 0; /* Add some space above and below the links */
+  margin-left: 20px; /* Add some space to the left of the links */
+  margin-right: 20px; /* Add some space to the right of the links */
+}
