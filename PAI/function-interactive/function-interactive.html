@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trapezoidal rule</title>
+  <link rel="stylesheet" href="./function-interactive.css">
+  <script type="module" src="./out/trapezoidal-rule.js"></script>
+</head>
+<body>
+  <div id="container">
+    <canvas id="myCanvas" width="1200" height="800"></canvas>
+    <div class="controls">
+        <h2>Trapezoidal rule</h2>
+        <a href="../PAI.html">Back to PAI index</a>
+
+        <!-- Expression --> 
+        <div class="label-container">
+            <label for="expression-input">Expression</label>
+        </div>
+        <div class="input-container-unit">
+            <input id="expression-input" type="text" value="x^2 + 1">
+        </div>
+
+        <!-- Number of trapezoids --> 
+        <div class="label-container">
+          <label for="number-of-trapezoids-input">Number of trapezoids</label>
+        </div>
+        <div class="input-container-unit">
+            <input id="number-of-trapezoids-input" type="text" value="4">
+        </div>
+
+        <!-- Start --> 
+        <div class="label-container">
+          <label for="start-input">Start</label>
+        </div>
+        <div class="input-container-unit">
+            <input id="start-input" type="text" value="0">
+        </div>
+
+        <!-- End --> 
+        <div class="label-container">
+          <label for="end-input">End</label>
+        </div>
+        <div class="input-container-unit">
+            <input id="end-input" type="text" value="2">
+        </div>
+
+        <!-- Update button --> 
+        <div class="button-container">
+          <button id="update-button">Update</button>
+        </div>
+
+    </div>
+  </div>
+</body>
+</html>
