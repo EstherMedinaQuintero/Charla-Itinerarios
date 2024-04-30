@@ -58,13 +58,13 @@
 
   <script>
     function showImage(index) {
-      // Ocultar todas las imágenes
+      /// Ocultar todas las imágenes
       let images = document.querySelectorAll('.image');
       images.forEach(function(image) {
         image.classList.add('hidden');
       });
 
-      // Mostrar la imagen seleccionada
+      /// Mostrar la imagen seleccionada
       let selectedImage = document.querySelector('.image:nth-of-type(' + index + ')');
       selectedImage.classList.remove('hidden');
     }
