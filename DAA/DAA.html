@@ -5,9 +5,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diseño y análisis de algoritmos</title>
   <link rel="stylesheet" href="../styles.css">
+  <style>
+    #imageContainer {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    #buttonContainer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .quarter-size {
+      width: 60%;
+      height: 60%;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+  </style>
 </head>
 <body>
   <h1>Diseño y análisis de algoritmos</h1>
-  <a href="../index.html">Back to index</a>
+  <a href="../docs/index.html">Back to index</a>
+
+  <!-- Contenedor de imágenes -->
+  <div id="imageContainer">
+    <img src="./img/AO.png" class="image">
+    <img src="./img/MM.png" class="image hidden">
+    <img src="./img/TSP.png" class="image hidden quarter-size">
+  </div>
+
+  <!-- Botones para navegar entre las imágenes -->
+  <div id="buttonContainer">
+    <button onclick="showImage(1)">Image 1</button>
+    <button onclick="showImage(2)">Image 2</button>
+    <button onclick="showImage(3)">Image 3</button>
+  </div>
+
+  <script>
+    function showImage(index) {
+      // Ocultar todas las imágenes
+      let images = document.querySelectorAll('.image');
+      images.forEach(function(image) {
+        image.classList.add('hidden');
+      });
+
+      // Mostrar la imagen seleccionada
+      let selectedImage = document.querySelector('.image:nth-of-type(' + index + ')');
+      selectedImage.classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>
