@@ -32,7 +32,6 @@ button:active {
 
 body {
   background-color: #E6E6FA;
-  margin: 0;
   font-family: 'arial';
 }
 
@@ -81,15 +80,22 @@ h1 {
   text-align: center;
   color: #702C8D;
   font-family: 'arial';
-  margin-top: 20px;
   margin-bottom: 20px;
+}
+
+h2 {
+  text-align: center;
+  color: #702C8D;
+  font-family: 'arial';
+  margin-bottom: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 h3 {
   text-align: center;
   color: #702C8D;
   font-family: 'arial';
-  margin-top: 20px;
   margin-bottom: 20px;
   font-size: 15px;
 }
