@@ -3,11 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inteligencia artificial avanzada</title>
+  <title>Inteligencia Artificial Avanzada</title>
   <link rel="stylesheet" href="../styles.css">
+  <style>
+    #imageContainer {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+
+    #buttonContainer {
+      display: flex;
+      justify-content: center;
+    }
+
+    .image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .quarter-size {
+      width: 60%;
+      height: 60%;
+    }
+
+    .mini-size {
+      width: 30%;
+      height: 30%;
+    }
+
+    .medium-size {
+      width: 40%;
+      height: 40%;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    button {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>Inteligencia artificial avanzada</h1>
+  <h1>Inteligencia Artificial Avanzada</h1>
   <a href="../index.html">Back to index</a>
+
+  <!-- Contenedor de imágenes -->
+  <div id="imageContainer">
+    <img src="./bayes.png" class="image mini-size">
+    <img src="./clasificador.png" class="image hidden mini-size">
+  </div>
+
+  <!-- Botones para navegar entre las imágenes -->
+  <div id="buttonContainer">
+    <button onclick="showImage(1)">Bayes</button>
+    <button onclick="showImage(2)">Clasificación</button>
+  </div>
+
+  <script>
+    function showImage(index) {
+      /// Ocultar todas las imágenes
+      let images = document.querySelectorAll('.image');
+      images.forEach(function(image) {
+        image.classList.add('hidden');
+      });
+
+      /// Mostrar la imagen seleccionada
+      let selectedImage = document.querySelector('.image:nth-of-type(' + index + ')');
+      selectedImage.classList.remove('hidden');
+    }
+  </script>
 </body>
 </html>
