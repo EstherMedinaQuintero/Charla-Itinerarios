@@ -4,13 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Procesadores de Lenguajes</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      font-family: monospace;
+    }
+    h1 {
+      text-align: center;
+    }
+    a {
+      text-align: center;
+      margin-bottom: 20px;
+      text-decoration: none;
+      color: blue;
+    }
+    #prompt {
+      width: 80%;
+      background-color: black;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    #entrada {
+      width: calc(80% - 60px);
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-right: 5px;
+    }
+    #boton {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: none;
+      background-color: blue;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
   <h1>Procesadores de lenguajes</h1>
   <a href="../index.html">Back to index</a>
-  <div id="consola"></div>
+  <div id="prompt"></div>
   <input type="text" id="entrada" placeholder="Ingrese un comando">
-  <button onclick="enviarComando()">Enviar</button>
-  <script src="script.js"></script>
+  <button id="boton">Enviar</button>
+  <script src="p09_egg_interpreter/prueba.js"></script>
 </body>
 </html>
