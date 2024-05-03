@@ -1,0 +1,186 @@
+/* -------------------------------------------- Cards -------------------------------------------- */
+
+.card {
+  width: 100px;
+  height: 140px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  padding: 2px 0;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.card-count {
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2px 0;
+}
+
+/* -------------------------------------------- Hands -------------------------------------------- */
+
+.hand-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #A367BD;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 0 auto 20px auto;
+  width: fit-content;
+}
+
+/* -------------------------------------------- Deks -------------------------------------------- */
+
+.deck-container {
+  position: relative;
+  width: 100px;
+  height: 140px;
+  border: 1px solid #ccc;
+  background-color: #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.deck img {
+  width: 100%;
+  height: auto;
+}
+
+/* ------------------------------------------- Buttons ------------------------------------------- */
+
+.button-container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+button {
+  font-size: 16px;
+  padding: 12px 24px;
+  background-color: #d68ed6; 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #A367BD;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+}
+
+button:active {
+  background-color: #9932CC;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* ------------------------------------------- Players ------------------------------------------- */
+
+.players-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/* ----------------------------------------- Otros elementos ----------------------------------------- */
+
+body {
+  background-color: #E6E6FA;
+  margin: 0;
+  font-family: 'arial';
+}
+
+.contenedor-enlaces {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.caja {
+  border: 2px solid #D3D3D3;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background-color: white;
+  text-align: center; 
+}
+
+.titulo {
+  font-size: 30px;
+  margin-bottom: 5px;
+  color: #4B0082;
+}
+
+.subtitulo {
+  font-size: 15px;
+  margin-bottom: 20px; 
+  color: #4B0082;
+}
+
+a {
+  display: block;
+  text-align: center;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+h1 {
+  text-align: center;
+  color: #702C8D;
+  font-family: 'arial';
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
